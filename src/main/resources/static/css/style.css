@@ -1,0 +1,191 @@
+
+.ui-upload-image{
+	width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../../images/admin/upload-image.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    float: left;
+}
+.ui-image-container{
+	width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.ui-image-container-title{
+	padding: 0 80px 0 20px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0;
+}
+.ui-image-container-content li{
+	margin: 5px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.ui-image-container-content .ui-upload-image{
+	width: 150px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../../images/admin/upload-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.ui-gallery-container .ui-upload-image{
+	width: 300px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../../images/admin/upload-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.ui-image-container-content .ui-image-container{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.ui-gallery-container .ui-image-container{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    line-height: 90px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.ui-image-title{
+	background: #f8f8f8;
+    border: 1px solid #eee;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 0px;
+    color: #666;
+}
+.ui-image-btn{
+	background: #f8f8f8;
+    border: 1px solid #eee;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-top: 0px;
+    color: #666;
+    clear: both;
+}
+.ui-image-btn dd{
+	float: left;
+    font-size: 12px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 50%;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    cursor: pointer;
+}
+.ui-image{
+	width: inherit;
+    height: inherit;
+}
+.ui-image-layer{
+	position:absolute;
+	top : 0px;
+	left: 0px;
+	width: inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+
+body .laytable-cell-1-image img{width: 46px;}
+body .layui-table-view .layui-table[lay-size=sm] .layui-table-cell{height: 25px;
+    line-height: 25px;
+}
+
+.ui-rows{
+	margin: 5px;
+}
+.ui-tab-ul li{
+	float: left;
+    margin-right: 10px;
+}
+
+
+.ui-gallery-container{
+	
+	
+}
+
+.ui-gallery-container li{
+	height: 200px;
+	width: 200px;
+	float: left;
+    margin: 10px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.ui-gallery-container li img{
+	height: 200px;
+	width: 200px;
+	border: 1px solid #999;
+}
+
+.ui-gallery-container .selected img{
+    border: 1px solid #009688;
+    border-radius: 2PX;
+    box-shadow: 0px 0px 10px 5px #5eb95e
+}
+
+.ui-i{
+	color: red;
+	margin-right: 5px;
+	vertical-align: sub;
+}
+
+

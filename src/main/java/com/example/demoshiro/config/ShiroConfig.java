@@ -45,10 +45,11 @@ public class ShiroConfig {
 		shiroFilterFactoryBean.setFilters(filters);
 
 		LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
+		filterChainDefinitionMap.put("/plugins/**", "anon");
 		filterChainDefinitionMap.put("/js/**", "anon");
 		filterChainDefinitionMap.put("/css/**", "anon");
 		filterChainDefinitionMap.put("/img/**", "anon");
-		filterChainDefinitionMap.put("/login/**", "anon");
+		filterChainDefinitionMap.put("/login/authc", "anon");
 		filterChainDefinitionMap.put("/logout", "logout");
 		filterChainDefinitionMap.put("/**", "authc");
 

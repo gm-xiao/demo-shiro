@@ -17,6 +17,11 @@ public class IndexController {
         return "/index";
     }
 
+    @RequestMapping("/header")
+    public String header(){
+        return "/header";
+    }
+
     @RequestMapping("/login")
     public String login(){
         return "/login";
