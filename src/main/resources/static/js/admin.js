@@ -2,19 +2,11 @@ layui.use([ 'layer', 'form', 'table', 'laydate' ],function() {
 	var layer = layui.layer, form = layui.form, table = layui.table, laydate = layui.laydate, $= layui.jquery;
 	
 	$('.sign-out').unbind('click').click(adminLoginOut);
-	
-	function loginOutResult(data){
-		if( data.code == 0 ){
-			window.location.href = ctx + '/';
-		}
-	}
+
 	
 	function adminLoginOut(){
 		layer.confirm('是否确认退出系统?', {icon: 3, title:'提示'}, function(index){
-			layer.close(index);
-			var url = ctx + '/loginOut';
-			var option = { type : 'POST', async : true, cache : false, url : url, data : null, success : loginOutResult};
-			$.ajax(option);
+			window.location.href = '/logout'
 		});			
 	}
 	

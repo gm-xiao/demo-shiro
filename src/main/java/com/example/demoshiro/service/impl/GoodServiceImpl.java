@@ -1,5 +1,6 @@
 package com.example.demoshiro.service.impl;
 
+import com.example.demoshiro.common.GUIDHelper;
 import com.example.demoshiro.dao.GoodDao;
 import com.example.demoshiro.domain.good.Good;
 import com.example.demoshiro.service.GoodService;
@@ -25,6 +26,26 @@ public class GoodServiceImpl implements GoodService {
     @Autowired
     private GoodDao goodDao;
 
+    @Override
+    public Good save(Good good) throws Exception{
+        if (StringUtils.isBlank(good.getId())){
+            good.setId(GUIDHelper.genRandomGUID());
+        }
+        return goodDao.save(good);
+    }
+
+    @Override
+    public Good update(Good good) throws Exception {
+        if (StringUtils.isBlank(good.getId())){
+            throw new Exception("ID IS EMPTY");
+        }
+        return goodDao.save(good);
+    }
+
+    @Override
+    public void delete(String id) {
+        goodDao.delete(id);
+    }
 
     @Override
     public List<Good> findAll(Good good) {
